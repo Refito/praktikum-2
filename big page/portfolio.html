@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore my portfolio of software development projects built using .NET, Next.js, and other cutting-edge technologies."
+    />
+    <title>Portfolio - Software Developer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      /* Navigation Menu */
+      nav {
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+
+      nav li {
+        display: inline;
+      }
+
+      nav a {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition */
+      }
+
+      /* Hover Effect for Navigation Links */
+      nav a:hover {
+        color: #ffeb3b; /* Change text color on hover */
+        transform: scale(1.1); /* Slightly enlarge the link */
+      }
+
+      header {
+        background: #2c3e50;
+        color: #ecf0f1;
+        text-align: center;
+        padding: 2rem 0;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      section {
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #2c3e50;
+      }
+
+      .project {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .project img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+      }
+
+      .project h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+
+      .project p {
+        margin-bottom: 1rem;
+      }
+
+      .technologies {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .technology {
+        background: #ecf0f1;
+        color: #2c3e50;
+        padding: 0.3rem 0.8rem;
+        border-radius: 4px;
+        font-size: 0.9rem;
+      }
+
+      footer {
+        text-align: center;
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 1rem 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+
+      footer a {
+        font-family: "Times New Roman", sans-serif;
+        color: #ecf0f1;
+        text-decoration: none;
+        margin: 0 0.5rem;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      [data-component="slideshow"] .slide {
+        display: none;
+      }
+
+      [data-component="slideshow"] .slide.active {
+        display: block;
+      }
+
+      [data-component="slideshow"] .slide img {
+        width: 640px;
+        aspect-ratio: 16/9;
+      }
+
+      .slideshow-container {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <h1>My Portfolio</h1>
+      <p>
+        A collection of projects showcasing my skills in software development.
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Project Section -->
+      <section>
+        <h2>Featured Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project">
+          <img src="https://via.placeholder.com/800x400" alt="Project 1" />
+          <h3>E-commerce Platform</h3>
+          <p>
+            A fully functional e-commerce platform built using .NET Core and
+            React.js. Features include product management, shopping cart, and
+            payment integration.
+          </p>
+          <div class="technologies">
+            <span class="technology">.NET Core</span>
+            <span class="technology">React.js</span>
+            <span class="technology">SQL Server</span>
+            <span class="technology">Stripe API</span>
+          </div>
+          <a
+            href="https://example.com/project1"
+            target="_blank"
+            style="color: #2c3e50; text-decoration: underline"
+            >View Project</a
+          >
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+          <img src="https://via.placeholder.com/800x400" alt="Project 2" />
+          <h3>Blogging Platform</h3>
+          <p>
+            A modern blogging platform developed with Next.js and MongoDB. Users
+            can create, edit, and publish articles with ease.
+          </p>
+          <div class="technologies">
+            <span class="technology">Next.js</span>
+            <span class="technology">MongoDB</span>
+            <span class="technology">GraphQL</span>
+            <span class="technology">Tailwind CSS</span>
+          </div>
+          <a
+            href="https://example.com/project2"
+            target="_blank"
+            style="color: #2c3e50; text-decoration: underline"
+            >View Project</a
+          >
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project">
+          <img src="https://via.placeholder.com/800x400" alt="Project 3" />
+          <h3>Task Management App</h3>
+          <p>
+            A task management application built with C# and Entity Framework. It
+            allows users to organize tasks, set deadlines, and collaborate with
+            teams.
+          </p>
+          <div class="technologies">
+            <span class="technology">C#</span>
+            <span class="technology">Entity Framework</span>
+            <span class="technology">Azure DevOps</span>
+            <span class="technology">Docker</span>
+          </div>
+          <a
+            href="https://example.com/project3"
+            target="_blank"
+            style="color: #2c3e50; text-decoration: underline"
+            >View Project</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <div class="slideshow-container">
+      <div id="slideshow-example" data-component="slideshow">
+        <div role="list">
+          <div class="slide">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXohQGilNBhlgJ0trQGO3kceO9_na7j2HjSA&s"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://financesonline.com/uploads/2018/12/pm.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR147Cn7YtEIzVtWTIEahipUOXVhqt2Iue4RQ&s"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="slideshow.js"></script>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 Refik Tefik. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

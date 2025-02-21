@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with us! Use our contact form, email, or phone number to discuss your project or ask any questions."
+    />
+    <title>Contact Us - Software Development Company</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      header {
+        background: #2c3e50;
+        color: #ecf0f1;
+        text-align: center;
+        padding: 2rem 0;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      /* Navigation Menu */
+      nav {
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+
+      nav li {
+        display: inline;
+      }
+
+      nav a {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition */
+      }
+
+      /* Hover Effect for Navigation Links */
+      nav a:hover {
+        color: #ffeb3b; /* Change text color on hover */
+        transform: scale(1.1); /* Slightly enlarge the link */
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      section {
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #2c3e50;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      label {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+
+      input,
+      textarea,
+      button {
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      button {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #34495e;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .info-item {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      .info-item img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.5rem;
+      }
+
+      footer {
+        text-align: center;
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 1rem 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+
+      footer a {
+        font-family: "Times New Roman", sans-serif;
+        color: #ecf0f1;
+        text-decoration: none;
+        margin: 0 0.5rem;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <h1>Get in Touch</h1>
+      <p>
+        We'd love to hear from you! Let's discuss your project or answer any
+        questions.
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Contact Form Section -->
+      <section>
+        <h2>Contact Form</h2>
+        <form action="#" method="POST">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+            required
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <!-- Contact Information Section -->
+      <section>
+        <h2>Other Ways to Reach Us</h2>
+        <div class="contact-info">
+          <div class="info-item">
+            <img src="https://via.placeholder.com/50" alt="Email Icon" />
+            <p>
+              Email:
+              <a href="mailto:contact@example.com">contact@example.com</a>
+            </p>
+          </div>
+          <div class="info-item">
+            <img src="https://via.placeholder.com/50" alt="Phone Icon" />
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+          </div>
+          <div class="info-item">
+            <img src="https://via.placeholder.com/50" alt="LinkedIn Icon" />
+            <p>
+              LinkedIn:
+              <a href="https://www.linkedin.com/company/example" target="_blank"
+                >linkedin.com/company/example</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map Section (Optional) -->
+      <section>
+        <h2>Our Location</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.984747503053!2d-73.9963843845411!3d40.75005387932638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258e5b3a862b1%3A0x7da305f2c65d3682!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1695076800413!5m2!1sen!2sus"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 AHD Solutions Ltd. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

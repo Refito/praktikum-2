@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Software Developer specializing in .NET and Next.js. Building scalable and efficient applications."
+    />
+    <title>John Doe - Software Developer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #333;
+        min-height: 100vh;
+      }
+
+      /* Navigation Menu */
+      nav {
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+
+      nav li {
+        display: inline;
+      }
+
+      nav a {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition */
+      }
+
+      /* Hover Effect for Navigation Links */
+      nav a:hover {
+        color: #ffeb3b; /* Change text color on hover */
+        transform: scale(1.1); /* Slightly enlarge the link */
+      }
+
+      header {
+        background: #2c3e50;
+        color: #ecf0f1;
+        text-align: center;
+        padding: 2rem 0;
+        position: relative; /* Required for animation */
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        animation: slideInFromLeft 1s ease-out forwards; /* Apply the animation */
+      }
+
+      header p {
+        font-size: 1.2rem;
+        animation: fadeIn 1s ease-out forwards; /* Optional fade-in effect for subtext */
+      }
+
+      /* Keyframes for Slide-In Animation */
+      @keyframes slideInFromLeft {
+        from {
+          transform: translateX(-100%); /* Start off-screen to the left */
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0); /* Move to the center */
+          opacity: 1;
+        }
+      }
+
+      /* Keyframes for Fade-In Animation (Optional) */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      section {
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #2c3e50;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .skill-item {
+        background: #ecf0f1;
+        color: #2c3e50;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+      }
+
+      footer {
+        text-align: center;
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 1rem 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+
+      footer a {
+        font-family: "Times New Roman", sans-serif;
+        color: #ecf0f1;
+        text-decoration: none;
+        margin: 0 0.5rem;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      .btn:link,
+      .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all 0.2s;
+        position: absolute;
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-white {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+      }
+
+      .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+      }
+
+      .btn-white::after {
+        background-color: #2c3e50;
+      }
+
+      .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+
+      .btn-animated {
+        -webkit-animation: moveInBottom 5s ease-out;
+        animation: moveInBottom 5s ease-out;
+        -webkit-animation-fill-mode: backwards;
+        animation-fill-mode: backwards;
+      }
+
+      @-webkit-keyframes moveInBottom {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes moveInBottom {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <h1>Refik Tefik</h1>
+      <p>Software Developer | .NET & Next.js Specialist</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- About Section -->
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Hi there! I'm Refik Tefik, a passionate software developer with
+          expertise in building robust and scalable applications using .NET and
+          Next.js. With years of experience in the tech industry, I specialize
+          in creating high-performance web applications that deliver exceptional
+          user experiences.
+        </p>
+        <p>
+          My goal is to combine my technical skills with creative
+          problem-solving to deliver innovative solutions that meet business
+          needs.
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+      <section>
+        <h2>Skills</h2>
+        <div class="skills">
+          <span class="skill-item">.NET Core</span>
+          <span class="skill-item">C#</span>
+          <span class="skill-item">Next.js</span>
+          <span class="skill-item">React.js</span>
+          <span class="skill-item">SQL</span>
+          <span class="skill-item">Entity Framework</span>
+          <span class="skill-item">RESTful APIs</span>
+          <span class="skill-item">Agile Methodologies</span>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section>
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            <strong
+              >Senior Software Developer at XYZ Corp (2020 - Present)</strong
+            >: Led development efforts on multiple enterprise-level projects
+            using .NET Core and Next.js, improving performance by 30%.
+          </li>
+          <li>
+            <strong>Software Engineer at ABC Tech (2017 - 2020)</strong>:
+            Designed and implemented RESTful APIs and microservices architecture
+            for large-scale applications.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section>
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or inquiries:</p>
+        <ul>
+          <li>Email: john.doe@example.com</li>
+          <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/refik-tefik" target="_blank"
+              >linkedin.com/in/refik-tefik</a
+            >
+          </li>
+          <li>
+            Github:
+            <a href="https://github.com/Refito/" target="_blank"
+              >github.com/Refito</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <div style="display: flex; justify-content: center; margin: 2rem 0">
+        <a
+          href="https://www.linkedin.com/company/ahd-solutions/posts/?feedView=all"
+          class="btn btn-white btn-animate"
+          >Check out the current company I am working in</a
+        >
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Refik Tefik. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
